@@ -137,11 +137,11 @@ function Cascade-WindowsPerMonitor {
       #     }
       #  }
         # print id titles
-         foreach ($hWnd in $hWndList) {
-               $title = New-Object System.Text.StringBuilder 1024
-               [WinAPI]::GetWindowText($hWnd, $title, $title.Capacity) | Out-Null
-               Write-Host "  Window Handle: $hWnd, Title: $($title.ToString())"
-         }
+       #  foreach ($hWnd in $hWndList) {
+       #        $title = New-Object System.Text.StringBuilder 1024
+       #        [WinAPI]::GetWindowText($hWnd, $title, $title.Capacity) | Out-Null
+       #        Write-Host "  Window Handle: $hWnd, Title: $($title.ToString())"
+       #  }
 
         # Adjust window positions and sizes
         for ($i = 0; $i -lt $count; $i++) {
